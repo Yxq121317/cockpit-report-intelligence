@@ -1,0 +1,83 @@
+:root {
+  --p1-ink: #0b1b33;
+  --p1-ink-soft: #43526b;
+  --p1-muted: #7b8aa3;
+  --p1-line: #e3eaf4;
+  --p1-surface: #ffffff;
+  --p1-canvas: #f3f6fb;
+  --p1-primary: #2f6bff;
+  --p1-primary-deep: #1f4fd0;
+  --p1-teal: #16b8a6;
+  --p1-amber: #f2a33c;
+  --p1-rose: #e5677f;
+  --p1-radius-lg: 20px;
+  --p1-radius-md: 14px;
+  --p1-shadow-sm: 0 1px 2px rgba(15, 35, 68, 0.04), 0 8px 24px rgba(15, 35, 68, 0.05);
+  --p1-shadow-md: 0 18px 48px rgba(15, 35, 68, 0.12);
+
+  --el-color-primary: #2f6bff;
+  --el-color-primary-light-3: #6f95ff;
+  --el-color-primary-light-5: #9db8ff;
+  --el-color-primary-light-7: #c8d7ff;
+  --el-color-primary-light-8: #dde7ff;
+  --el-color-primary-light-9: #eef3ff;
+  --el-color-primary-dark-2: #2556d9;
+  --el-border-radius-base: 10px;
+  --el-font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--p1-ink);
+  background: var(--p1-canvas);
+  font-family: var(--el-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(47, 107, 255, 0.18);
+}
+
+:focus-visible {
+  outline: 2px solid rgba(47, 107, 255, 0.55);
+  outline-offset: 2px;
+}
+
+.el-input__wrapper {
+  border-radius: 10px;
+}
+
+.el-button {
+  font-weight: 600;
+}
+
+.el-button--large {
+  border-radius: 11px;
+}

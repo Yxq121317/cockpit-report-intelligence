@@ -1,0 +1,61 @@
+# ========== 环境变量与密钥 ==========
+# 真实密钥只放本地 .env，仓库里只保留 .env.example
+.env
+.env.local
+.env.*.local
+backend/.env
+*.pem
+*.key
+
+# ========== Python ==========
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# ========== 运行数据（数据库、报表、评测输出）==========
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.xlsx
+*.csv
+
+# ========== 日志与崩溃转储 ==========
+*.log
+hs_err_pid*.log
+replay_pid*.log
+
+# ========== 前端 ==========
+node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ========== IDE / 系统 ==========
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========== 本地临时文件 ==========
+.notes_tmp/
+.tmp_tests/
+*.tmp
